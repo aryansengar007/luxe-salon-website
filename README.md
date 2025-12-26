@@ -8,7 +8,7 @@ A modern HTML project utilizing Tailwind CSS for building responsive web applica
 
 ## 🔗 Live Demo
 
-[https://aryan-sengar-portfolio-v2.netlify.app/](https://aryan-sengar-portfolio-v2.netlify.app/)
+[https://luxe-salon-website.netlify.app/](https://luxe-salon-website.netlify.app/)
 
 ---
 
