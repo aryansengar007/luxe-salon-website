@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Luxe Salon Studio | Premium Beauty & Hair Services</title>
+    <meta name="description" content="Explore our comprehensive range of premium salon services including hair styling, coloring, treatments, makeup, and spa services. Transparent pricing and easy online booking available.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fluxesalon7457back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+<body class="bg-background">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-secondary-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-accent-400" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 10H28L22 16L24 24L16 20L8 24L10 16L4 10H12L16 2Z"/>
+                        </svg>
+                        <span class="font-display font-bold text-xl text-primary">Luxe Salon Studio</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary font-body font-medium hover:text-accent-400 transition-base">Home</a>
+                    <a href="services.html" class="text-primary font-body font-medium hover:text-accent-400 transition-base">Services</a>
+                    <a href="gallery.html" class="text-text-secondary font-body font-medium hover:text-accent-400 transition-base">Gallery</a>
+                    <a href="about_us.html" class="text-text-secondary font-body font-medium hover:text-accent-400 transition-base">About</a>
+                    <a href="contact.html" class="text-text-secondary font-body font-medium hover:text-accent-400 transition-base">Contact</a>
+                    <a href="book_appointment.html" class="btn-primary">Book Now</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-primary hover:text-accent-400 transition-base">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-secondary-100">
+            <div class="px-4 py-4 space-y-4">
+                <a href="homepage.html" class="block text-text-secondary font-body font-medium">Home</a>
+                <a href="services.html" class="block text-primary font-body font-medium">Services</a>
+                <a href="gallery.html" class="block text-text-secondary font-body font-medium">Gallery</a>
+                <a href="about_us.html" class="block text-text-secondary font-body font-medium">About</a>
+                <a href="contact.html" class="block text-text-secondary font-body font-medium">Contact</a>
+                <a href="book_appointment.html" class="btn-primary w-full text-center">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sticky Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
+        <a href="tel:+1234567890" class="bg-success-600 text-white p-4 rounded-full shadow-modal hover:bg-success-600/90 transition-base">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+        </a>
+        <a href="https://wa.me/1234567890" class="bg-accent-400 text-white p-4 rounded-full shadow-modal hover:bg-accent-500 transition-base">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden mt-16">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1633681138600-295fcd688876" 
+                 alt="Luxurious salon interior showcasing premium service environment with elegant styling stations" 
+                 class="w-full h-full object-cover"
+                 onerror="this.src='https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=2'; this.onerror=null;">
+            <div class="absolute inset-0 bg-primary/70"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto" data-aos="fade-up">
+            <h1 class="heading-hero text-white mb-6">
+                Our Premium
+                <span class="text-accent-400 block">Services</span>
+            </h1>
+            <p class="body-lg text-white/90 mb-8 max-w-2xl mx-auto">
+                Discover our comprehensive range of beauty services, each designed with precision and delivered with care. Transparent pricing, expert stylists, and guaranteed satisfaction.
+            </p>
+            
+            <!-- Service Search -->
+            <div class="max-w-2xl mx-auto">
+                <div class="relative">
+                    <input type="text" 
+                           id="service-search" 
+                           placeholder="Search for a service..." 
+                           class="w-full px-6 py-4 pr-12 rounded-sm bg-white/95 backdrop-blur-sm text-text-primary placeholder:text-text-secondary focus:outline-none focus:ring-2 focus:ring-accent-400">
+                    <button class="absolute right-4 top-1/2 transform -translate-y-1/2 text-accent-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories Filter -->
+    <section class="py-8 bg-surface border-b border-secondary-100 sticky top-16 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between flex-wrap gap-4">
+                <div class="flex items-center space-x-2 flex-wrap gap-2">
+                    <button class="category-filter active px-6 py-2 rounded-sm bg-accent-400 text-white font-body font-medium transition-base" data-category="all">
+                        All Services
+                    </button>
+                    <button class="category-filter px-6 py-2 rounded-sm bg-white text-text-primary font-body font-medium hover:bg-accent-100 transition-base" data-category="hair">
+                        Hair Services
+                    </button>
+                    <button class="category-filter px-6 py-2 rounded-sm bg-white text-text-primary font-body font-medium hover:bg-accent-100 transition-base" data-category="color">
+                        Color & Treatments
+                    </button>
+                    <button class="category-filter px-6 py-2 rounded-sm bg-white text-text-primary font-body font-medium hover:bg-accent-100 transition-base" data-category="makeup">
+                        Makeup & Beauty
+                    </button>
+                    <button class="category-filter px-6 py-2 rounded-sm bg-white text-text-primary font-body font-medium hover:bg-accent-100 transition-base" data-category="spa">
+                        Spa & Wellness
+                    </button>
+                </div>
+                <button id="reset-filters" class="flex items-center space-x-2 text-text-secondary hover:text-accent-400 transition-base">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                    </svg>
+                    <span class="font-body font-medium">Reset</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section-container">
+        <div id="services-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Hair Styling Services -->
+            <div class="service-card card group cursor-pointer" data-category="hair" data-aos="fade-up" data-aos-delay="100">
+                <div class="aspect-w-16 aspect-h-12 mb-6 overflow-hidden rounded-sm">
+                    <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1c3331259-1764764059488.png" 
+                         alt="Professional hair cutting service showing stylist creating precision haircut for client" 
+                         class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                         onerror="this.src='https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;">
+                </div>
+                <div class="flex items-start justify-between mb-3">
+                    <div>
+                        <h3 class="heading-sm text-primary mb-1">Precision Haircut</h3>
+                        <p class="body-sm text-text-secondary">60 minutes</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-2xl font-display font-bold text-accent-400">$65</div>
+                    </div>
+                </div>
+                <p class="body-base text-text-secondary mb-4">
+                    Expert cutting techniques tailored to your face shape, hair texture, and lifestyle. Includes consultation, wash, cut, and styling.
+                </p>
+                <div class="service-details hidden">
+                    <div class="border-t border-secondary-100 pt-4 mt-4 space-y-3">
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Personalized consultation included</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Premium hair care products</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Complimentary styling tips</span>
+                        </div>
+                        <p class="body-sm text-text-secondary italic mt-4">
+                            "Best haircut I've ever had! The stylist really understood what I wanted." - Jennifer M.
+                        </p>
+                    </div>
+                </div>
+                <button class="toggle-details mt-4 text-accent-400 font-body font-medium hover:text-accent-500 transition-base flex items-center space-x-2">
+                    <span>View Details</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <a href="book_appointment.html" class="btn-primary w-full mt-4">Book This Service</a>
+            </div>
+
+            <!-- Blowout & Styling -->
+            <div class="service-card card group cursor-pointer" data-category="hair" data-aos="fade-up" data-aos-delay="200">
+                <div class="aspect-w-16 aspect-h-12 mb-6 overflow-hidden rounded-sm">
+                    <img src="https://img.rocket.new/generatedImages/rocket_gen_img_156422d29-1766756494789.png" 
+                         alt="Professional blowout styling service with stylist using blow dryer to create voluminous hairstyle" 
+                         class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                         onerror="this.src='https://images.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg'; this.onerror=null;">
+                </div>
+                <div class="flex items-start justify-between mb-3">
+                    <div>
+                        <h3 class="heading-sm text-primary mb-1">Signature Blowout</h3>
+                        <p class="body-sm text-text-secondary">45 minutes</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-2xl font-display font-bold text-accent-400">$55</div>
+                    </div>
+                </div>
+                <p class="body-base text-text-secondary mb-4">
+                    Professional blow-dry styling for volume, smoothness, or waves. Perfect for special occasions or everyday glamour.
+                </p>
+                <div class="service-details hidden">
+                    <div class="border-t border-secondary-100 pt-4 mt-4 space-y-3">
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Heat protection treatment included</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Long-lasting hold products</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Recommended every 3-5 days</span>
+                        </div>
+                        <p class="body-sm text-text-secondary italic mt-4">
+                            "My hair has never looked this good! The blowout lasted for days." - Amanda K.
+                        </p>
+                    </div>
+                </div>
+                <button class="toggle-details mt-4 text-accent-400 font-body font-medium hover:text-accent-500 transition-base flex items-center space-x-2">
+                    <span>View Details</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <a href="book_appointment.html" class="btn-primary w-full mt-4">Book This Service</a>
+            </div>
+
+            <!-- Updo Styling -->
+            <div class="service-card card group cursor-pointer" data-category="hair" data-aos="fade-up" data-aos-delay="300">
+                <div class="aspect-w-16 aspect-h-12 mb-6 overflow-hidden rounded-sm">
+                    <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1ae3127fe-1764765218892.png" 
+                         alt="Elegant updo hairstyle for special occasions showing intricate braiding and styling work" 
+                         class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                         onerror="this.src='https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;">
+                </div>
+                <div class="flex items-start justify-between mb-3">
+                    <div>
+                        <h3 class="heading-sm text-primary mb-1">Special Occasion Updo</h3>
+                        <p class="body-sm text-text-secondary">90 minutes</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-2xl font-display font-bold text-accent-400">$95</div>
+                    </div>
+                </div>
+                <p class="body-base text-text-secondary mb-4">
+                    Elegant updos for weddings, proms, and special events. Includes trial session and day-of styling with accessories.
+                </p>
+                <div class="service-details hidden">
+                    <div class="border-t border-secondary-100 pt-4 mt-4 space-y-3">
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Complimentary trial session</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Hair accessories available</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Long-lasting hold guaranteed</span>
+                        </div>
+                        <p class="body-sm text-text-secondary italic mt-4">
+                            "Perfect for my wedding day! My hair stayed beautiful all night." - Rachel S.
+                        </p>
+                    </div>
+                </div>
+                <button class="toggle-details mt-4 text-accent-400 font-body font-medium hover:text-accent-500 transition-base flex items-center space-x-2">
+                    <span>View Details</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <a href="book_appointment.html" class="btn-primary w-full mt-4">Book This Service</a>
+            </div>
+
+            <!-- Color Services -->
+            <div class="service-card card group cursor-pointer" data-category="color" data-aos="fade-up" data-aos-delay="100">
+                <div class="aspect-w-16 aspect-h-12 mb-6 overflow-hidden rounded-sm">
+                    <img src="https://images.unsplash.com/photo-1497198818750-2c8667609b25" 
+                         alt="Professional hair coloring service showing stylist applying color treatment to client's hair" 
+                         class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                         onerror="this.src='https://images.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg'; this.onerror=null;">
+                </div>
+                <div class="flex items-start justify-between mb-3">
+                    <div>
+                        <h3 class="heading-sm text-primary mb-1">Full Color Service</h3>
+                        <p class="body-sm text-text-secondary">120 minutes</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-2xl font-display font-bold text-accent-400">$125</div>
+                    </div>
+                </div>
+                <p class="body-base text-text-secondary mb-4">
+                    Complete color transformation using premium products. Includes color consultation, application, toning, and conditioning treatment.
+                </p>
+                <div class="service-details hidden">
+                    <div class="border-t border-secondary-100 pt-4 mt-4 space-y-3">
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Ammonia-free options available</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Deep conditioning treatment included</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Touch-up recommended every 6-8 weeks</span>
+                        </div>
+                        <p class="body-sm text-text-secondary italic mt-4">
+                            "The color came out exactly as I envisioned! So vibrant and healthy-looking." - Lisa T.
+                        </p>
+                    </div>
+                </div>
+                <button class="toggle-details mt-4 text-accent-400 font-body font-medium hover:text-accent-500 transition-base flex items-center space-x-2">
+                    <span>View Details</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <a href="book_appointment.html" class="btn-primary w-full mt-4">Book This Service</a>
+            </div>
+
+            <!-- Balayage -->
+            <div class="service-card card group cursor-pointer" data-category="color" data-aos="fade-up" data-aos-delay="200">
+                <div class="aspect-w-16 aspect-h-12 mb-6 overflow-hidden rounded-sm">
+                    <img src="https://img.rocket.new/generatedImages/rocket_gen_img_15a293e5d-1766602191971.png" 
+                         alt="Beautiful balayage hair coloring technique showing natural-looking highlights and dimension" 
+                         class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                         onerror="this.src='https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;">
+                </div>
+                <div class="flex items-start justify-between mb-3">
+                    <div>
+                        <h3 class="heading-sm text-primary mb-1">Balayage Highlights</h3>
+                        <p class="body-sm text-text-secondary">150 minutes</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-2xl font-display font-bold text-accent-400">$185</div>
+                    </div>
+                </div>
+                <p class="body-base text-text-secondary mb-4">
+                    Hand-painted highlights for natural, sun-kissed dimension. Low maintenance with seamless grow-out for effortless beauty.
+                </p>
+                <div class="service-details hidden">
+                    <div class="border-t border-secondary-100 pt-4 mt-4 space-y-3">
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Custom color blending</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Toning and glossing included</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Maintenance every 3-4 months</span>
+                        </div>
+                        <p class="body-sm text-text-secondary italic mt-4">
+                            "The most natural-looking highlights I've ever had! Worth every penny." - Michelle D.
+                        </p>
+                    </div>
+                </div>
+                <button class="toggle-details mt-4 text-accent-400 font-body font-medium hover:text-accent-500 transition-base flex items-center space-x-2">
+                    <span>View Details</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <a href="book_appointment.html" class="btn-primary w-full mt-4">Book This Service</a>
+            </div>
+
+            <!-- Keratin Treatment -->
+            <div class="service-card card group cursor-pointer" data-category="color" data-aos="fade-up" data-aos-delay="300">
+                <div class="aspect-w-16 aspect-h-12 mb-6 overflow-hidden rounded-sm">
+                    <img src="https://img.rocket.new/generatedImages/rocket_gen_img_13410bc67-1764658795895.png" 
+                         alt="Keratin hair treatment application showing smooth, glossy hair transformation results" 
+                         class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                         onerror="this.src='https://images.pixabay.com/photo/2016/03/26/13/09/cup-1280537_1280.jpg'; this.onerror=null;">
+                </div>
+                <div class="flex items-start justify-between mb-3">
+                    <div>
+                        <h3 class="heading-sm text-primary mb-1">Keratin Smoothing Treatment</h3>
+                        <p class="body-sm text-text-secondary">180 minutes</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-2xl font-display font-bold text-accent-400">$295</div>
+                    </div>
+                </div>
+                <p class="body-base text-text-secondary mb-4">
+                    Professional smoothing treatment that eliminates frizz and reduces styling time. Results last 3-5 months with proper care.
+                </p>
+                <div class="service-details hidden">
+                    <div class="border-t border-secondary-100 pt-4 mt-4 space-y-3">
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Formaldehyde-free formula</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Reduces styling time by 50%</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Aftercare products included</span>
+                        </div>
+                        <p class="body-sm text-text-secondary italic mt-4">
+                            "Life-changing! My morning routine is so much easier now." - Patricia W.
+                        </p>
+                    </div>
+                </div>
+                <button class="toggle-details mt-4 text-accent-400 font-body font-medium hover:text-accent-500 transition-base flex items-center space-x-2">
+                    <span>View Details</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <a href="book_appointment.html" class="btn-primary w-full mt-4">Book This Service</a>
+            </div>
+
+            <!-- Makeup Services -->
+            <div class="service-card card group cursor-pointer" data-category="makeup" data-aos="fade-up" data-aos-delay="100">
+                <div class="aspect-w-16 aspect-h-12 mb-6 overflow-hidden rounded-sm">
+                    <img src="https://images.unsplash.com/photo-1733685317295-96743c175ed9" 
+                         alt="Professional makeup application service showing makeup artist applying foundation to client" 
+                         class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                         onerror="this.src='https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;">
+                </div>
+                <div class="flex items-start justify-between mb-3">
+                    <div>
+                        <h3 class="heading-sm text-primary mb-1">Special Event Makeup</h3>
+                        <p class="body-sm text-text-secondary">75 minutes</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-2xl font-display font-bold text-accent-400">$85</div>
+                    </div>
+                </div>
+                <p class="body-base text-text-secondary mb-4">
+                    Professional makeup application for weddings, photoshoots, and special occasions. Long-lasting, camera-ready results.
+                </p>
+                <div class="service-details hidden">
+                    <div class="border-t border-secondary-100 pt-4 mt-4 space-y-3">
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Premium makeup brands</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">False lashes included</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Touch-up kit provided</span>
+                        </div>
+                        <p class="body-sm text-text-secondary italic mt-4">
+                            "My makeup looked flawless all day! So many compliments." - Sophia L.
+                        </p>
+                    </div>
+                </div>
+                <button class="toggle-details mt-4 text-accent-400 font-body font-medium hover:text-accent-500 transition-base flex items-center space-x-2">
+                    <span>View Details</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <a href="book_appointment.html" class="btn-primary w-full mt-4">Book This Service</a>
+            </div>
+
+            <!-- Bridal Makeup -->
+            <div class="service-card card group cursor-pointer" data-category="makeup" data-aos="fade-up" data-aos-delay="200">
+                <div class="aspect-w-16 aspect-h-12 mb-6 overflow-hidden rounded-sm">
+                    <img src="https://img.rocket.new/generatedImages/rocket_gen_img_116f7e4d9-1765735138410.png" 
+                         alt="Bridal makeup application showing elegant, timeless wedding day makeup look" 
+                         class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                         onerror="this.src='https://images.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg'; this.onerror=null;">
+                </div>
+                <div class="flex items-start justify-between mb-3">
+                    <div>
+                        <h3 class="heading-sm text-primary mb-1">Bridal Makeup Package</h3>
+                        <p class="body-sm text-text-secondary">120 minutes + trial</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-2xl font-display font-bold text-accent-400">$195</div>
+                    </div>
+                </div>
+                <p class="body-base text-text-secondary mb-4">
+                    Complete bridal makeup experience including trial session, wedding day application, and touch-up services throughout your special day.
+                </p>
+                <div class="service-details hidden">
+                    <div class="border-t border-secondary-100 pt-4 mt-4 space-y-3">
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Trial session 2-4 weeks before</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Waterproof, long-wear products</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">On-site touch-ups available</span>
+                        </div>
+                        <p class="body-sm text-text-secondary italic mt-4">
+                            "I felt like a princess! My makeup was perfect from ceremony to reception." - Emma B.
+                        </p>
+                    </div>
+                </div>
+                <button class="toggle-details mt-4 text-accent-400 font-body font-medium hover:text-accent-500 transition-base flex items-center space-x-2">
+                    <span>View Details</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <a href="book_appointment.html" class="btn-primary w-full mt-4">Book This Service</a>
+            </div>
+
+            <!-- Spa Services -->
+            <div class="service-card card group cursor-pointer" data-category="spa" data-aos="fade-up" data-aos-delay="300">
+                <div class="aspect-w-16 aspect-h-12 mb-6 overflow-hidden rounded-sm">
+                    <img src="https://img.rocket.new/generatedImages/rocket_gen_img_126dd2ddf-1765312308147.png" 
+                         alt="Relaxing facial treatment showing client receiving professional skincare service in serene spa environment" 
+                         class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                         onerror="this.src='https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;">
+                </div>
+                <div class="flex items-start justify-between mb-3">
+                    <div>
+                        <h3 class="heading-sm text-primary mb-1">Signature Facial Treatment</h3>
+                        <p class="body-sm text-text-secondary">60 minutes</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-2xl font-display font-bold text-accent-400">$95</div>
+                    </div>
+                </div>
+                <p class="body-base text-text-secondary mb-4">
+                    Customized facial treatment addressing your specific skin concerns. Includes deep cleansing, exfoliation, mask, and massage.
+                </p>
+                <div class="service-details hidden">
+                    <div class="border-t border-secondary-100 pt-4 mt-4 space-y-3">
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Skin analysis included</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Medical-grade products</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-text-secondary">
+                            <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm">Monthly treatments recommended</span>
+                        </div>
+                        <p class="body-sm text-text-secondary italic mt-4">
+                            "My skin has never looked better! So relaxing and rejuvenating." - Nicole P.
+                        </p>
+                    </div>
+                </div>
+                <button class="toggle-details mt-4 text-accent-400 font-body font-medium hover:text-accent-500 transition-base flex items-center space-x-2">
+                    <span>View Details</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <a href="book_appointment.html" class="btn-primary w-full mt-4">Book This Service</a>
+            </div>
+        </div>
+
+        <!-- No Results Message -->
+        <div id="no-results" class="hidden text-center py-16">
+            <svg class="w-24 h-24 mx-auto text-text-tertiary mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <h3 class="heading-sm text-text-secondary mb-4">No services found</h3>
+            <p class="body-base text-text-secondary mb-6">Try adjusting your search or filters</p>
+            <button id="clear-search" class="btn-outline">Clear Search</button>
+        </div>
+    </section>
+
+    <!-- Service Packages -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="heading-lg text-primary mb-4">Service Packages</h2>
+                <p class="body-lg text-text-secondary max-w-2xl mx-auto">
+                    Save more with our curated service packages designed for complete transformations and ongoing care.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-elevated text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="inline-block p-4 bg-accent-100 rounded-full mb-6">
+                        <svg class="w-8 h-8 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="heading-sm text-primary mb-3">Bridal Beauty Package</h3>
+                    <div class="text-3xl font-display font-bold text-accent-400 mb-4">$425</div>
+                    <p class="body-base text-text-secondary mb-6">Save $50</p>
+                    <ul class="space-y-3 text-left mb-8">
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm text-text-secondary">Bridal makeup with trial</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm text-text-secondary">Special occasion updo</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm text-text-secondary">Signature facial treatment</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm text-text-secondary">Touch-up services on wedding day</span>
+                        </li>
+                    </ul>
+                    <a href="book_appointment.html" class="btn-primary w-full">Book Package</a>
+                </div>
+
+                <div class="card-elevated text-center border-2 border-accent-400 relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent-400 text-white px-6 py-2 rounded-full text-sm font-body font-medium">
+                        Most Popular
+                    </div>
+                    <div class="inline-block p-4 bg-accent-100 rounded-full mb-6 mt-4">
+                        <svg class="w-8 h-8 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="heading-sm text-primary mb-3">Complete Transformation</h3>
+                    <div class="text-3xl font-display font-bold text-accent-400 mb-4">$345</div>
+                    <p class="body-base text-text-secondary mb-6">Save $40</p>
+                    <ul class="space-y-3 text-left mb-8">
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm text-text-secondary">Precision haircut & styling</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm text-text-secondary">Balayage highlights</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm text-text-secondary">Deep conditioning treatment</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm text-text-secondary">Signature blowout</span>
+                        </li>
+                    </ul>
+                    <a href="book_appointment.html" class="btn-primary w-full">Book Package</a>
+                </div>
+
+                <div class="card-elevated text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="inline-block p-4 bg-accent-100 rounded-full mb-6">
+                        <svg class="w-8 h-8 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="heading-sm text-primary mb-3">Monthly Maintenance</h3>
+                    <div class="text-3xl font-display font-bold text-accent-400 mb-4">$165</div>
+                    <p class="body-base text-text-secondary mb-6">Save $25</p>
+                    <ul class="space-y-3 text-left mb-8">
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm text-text-secondary">Precision haircut</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm text-text-secondary">Signature blowout</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm text-text-secondary">Signature facial treatment</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-5 h-5 text-accent-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="body-sm text-text-secondary">Priority booking access</span>
+                        </li>
+                    </ul>
+                    <a href="book_appointment.html" class="btn-primary w-full">Book Package</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+            <h2 class="heading-lg mb-6">Ready to Book Your Service?</h2>
+            <p class="body-lg mb-8 opacity-90">
+                Choose your preferred service and book your appointment online. Our expert team is ready to transform your look.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="book_appointment.html" class="btn-primary">Book Appointment</a>
+                <a href="contact.html" class="btn-ghost text-white border-white hover:bg-white hover:text-primary">Have Questions?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-surface py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent-400" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 10H28L22 16L24 24L16 20L8 24L10 16L4 10H12L16 2Z"/>
+                        </svg>
+                        <span class="font-display font-bold text-xl text-primary">Luxe Salon Studio</span>
+                    </div>
+                    <p class="body-base text-text-secondary mb-6 max-w-md">
+                        Where beauty meets sophistication. Experience transformative beauty services in our luxurious salon studio with professional expertise and personalized care.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent-400 transition-base">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent-400 transition-base">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent-400 transition-base">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent-400 transition-base">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-display font-medium text-lg text-primary mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-text-secondary hover:text-accent-400 transition-base">Services</a></li>
+                        <li><a href="gallery.html" class="text-text-secondary hover:text-accent-400 transition-base">Gallery</a></li>
+                        <li><a href="about_us.html" class="text-text-secondary hover:text-accent-400 transition-base">About Us</a></li>
+                        <li><a href="book_appointment.html" class="text-text-secondary hover:text-accent-400 transition-base">Book Appointment</a></li>
+                        <li><a href="contact.html" class="text-text-secondary hover:text-accent-400 transition-base">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-display font-medium text-lg text-primary mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="text-text-secondary">
+                            <span class="block">123 Beauty Boulevard</span>
+                            <span class="block">Luxury District, NY 10001</span>
+                        </li>
+                        <li>
+                            <a href="tel:+1234567890" class="text-text-secondary hover:text-accent-400 transition-base">
+                                (123) 456-7890
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:hello@luxesalonstudio.com" class="text-text-secondary hover:text-accent-400 transition-base">
+                                hello@luxesalonstudio.com
+                            </a>
+                        </li>
+                        <li class="text-text-secondary">
+                            <span class="block">Mon-Sat: 9AM-7PM</span>
+                            <span class="block">Sunday: 10AM-6PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-100 mt-12 pt-8 text-center">
+                <p class="text-text-secondary">
+                    © 2025 Luxe Salon Studio. All Rights Reserved. | Licensed Beauty Professionals | Certified Organic Products
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Service search functionality
+        const serviceSearch = document.getElementById('service-search');
+        const serviceCards = document.querySelectorAll('.service-card');
+        const noResults = document.getElementById('no-results');
+        const clearSearchBtn = document.getElementById('clear-search');
+
+        serviceSearch.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            let visibleCount = 0;
+
+            serviceCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('.body-base').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            noResults.classList.toggle('hidden', visibleCount > 0);
+        });
+
+        clearSearchBtn.addEventListener('click', () => {
+            serviceSearch.value = '';
+            serviceCards.forEach(card => card.style.display = 'block');
+            noResults.classList.add('hidden');
+        });
+
+        // Category filter functionality
+        const categoryFilters = document.querySelectorAll('.category-filter');
+        const resetFiltersBtn = document.getElementById('reset-filters');
+
+        categoryFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                // Update active state
+                categoryFilters.forEach(f => {
+                    f.classList.remove('active', 'bg-accent-400', 'text-white');
+                    f.classList.add('bg-white', 'text-text-primary');
+                });
+                filter.classList.add('active', 'bg-accent-400', 'text-white');
+                filter.classList.remove('bg-white', 'text-text-primary');
+
+                // Filter services
+                const category = filter.dataset.category;
+                let visibleCount = 0;
+
+                serviceCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                noResults.classList.toggle('hidden', visibleCount > 0);
+            });
+        });
+
+        resetFiltersBtn.addEventListener('click', () => {
+            // Reset category filters
+            categoryFilters.forEach(f => {
+                f.classList.remove('active', 'bg-accent-400', 'text-white');
+                f.classList.add('bg-white', 'text-text-primary');
+            });
+            categoryFilters[0].classList.add('active', 'bg-accent-400', 'text-white');
+            categoryFilters[0].classList.remove('bg-white', 'text-text-primary');
+
+            // Reset search
+            serviceSearch.value = '';
+
+            // Show all services
+            serviceCards.forEach(card => card.style.display = 'block');
+            noResults.classList.add('hidden');
+        });
+
+        // Toggle service details
+        document.querySelectorAll('.toggle-details').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const card = e.target.closest('.service-card');
+                const details = card.querySelector('.service-details');
+                const icon = button.querySelector('svg');
+                
+                details.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+                
+                button.querySelector('span').textContent = 
+                    details.classList.contains('hidden') ? 'View Details' : 'Hide Details';
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

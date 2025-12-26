@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Luxe Salon Studio | Online Booking</title>
+    <meta name="description" content="Book your appointment at Luxe Salon Studio. Choose your service, select your preferred stylist, and pick your perfect time slot. Real-time availability and instant confirmation.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fluxesalon7457back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+<body class="bg-background">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-secondary-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-accent-400" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 10H28L22 16L24 24L16 20L8 24L10 16L4 10H12L16 2Z"/>
+                        </svg>
+                        <span class="font-display font-bold text-xl text-primary">Luxe Salon Studio</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary font-body font-medium hover:text-accent-400 transition-base">Home</a>
+                    <a href="services.html" class="text-text-secondary font-body font-medium hover:text-accent-400 transition-base">Services</a>
+                    <a href="gallery.html" class="text-text-secondary font-body font-medium hover:text-accent-400 transition-base">Gallery</a>
+                    <a href="about_us.html" class="text-text-secondary font-body font-medium hover:text-accent-400 transition-base">About</a>
+                    <a href="contact.html" class="text-text-secondary font-body font-medium hover:text-accent-400 transition-base">Contact</a>
+                    <a href="book_appointment.html" class="btn-primary">Book Now</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-primary hover:text-accent-400 transition-base">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-secondary-100">
+            <div class="px-4 py-4 space-y-4">
+                <a href="homepage.html" class="block text-text-secondary font-body font-medium">Home</a>
+                <a href="services.html" class="block text-text-secondary font-body font-medium">Services</a>
+                <a href="gallery.html" class="block text-text-secondary font-body font-medium">Gallery</a>
+                <a href="about_us.html" class="block text-text-secondary font-body font-medium">About</a>
+                <a href="contact.html" class="block text-text-secondary font-body font-medium">Contact</a>
+                <a href="book_appointment.html" class="btn-primary w-full text-center">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sticky Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
+        <a href="tel:+1234567890" class="bg-success-600 text-white p-4 rounded-full shadow-modal hover:bg-success-600/90 transition-base">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+        </a>
+        <a href="https://wa.me/1234567890" class="bg-accent-400 text-white p-4 rounded-full shadow-modal hover:bg-accent-500 transition-base">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-12 bg-surface overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                    <pattern id="booking-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <circle cx="10" cy="10" r="1" fill="currentColor" class="text-accent-400"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#booking-pattern)"/>
+            </svg>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+            <h1 class="heading-lg text-primary mb-4">Book Your Appointment</h1>
+            <p class="body-lg text-text-secondary max-w-2xl mx-auto">
+                Choose your service, select your preferred stylist, and pick your perfect time. Real-time availability with instant confirmation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Progress Indicator -->
+    <section class="bg-background py-6 border-b border-secondary-100 sticky top-16 z-40">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2 flex-1">
+                    <div id="step-1-indicator" class="flex items-center space-x-2 step-active">
+                        <div class="w-8 h-8 rounded-full bg-accent-400 text-white flex items-center justify-center font-body font-medium text-sm">1</div>
+                        <span class="hidden sm:inline font-body font-medium text-sm text-primary">Service</span>
+                    </div>
+                </div>
+                <div class="w-12 h-0.5 bg-secondary-200"></div>
+                <div class="flex items-center space-x-2 flex-1 justify-center">
+                    <div id="step-2-indicator" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-secondary-200 text-text-secondary flex items-center justify-center font-body font-medium text-sm">2</div>
+                        <span class="hidden sm:inline font-body font-medium text-sm text-text-secondary">Stylist</span>
+                    </div>
+                </div>
+                <div class="w-12 h-0.5 bg-secondary-200"></div>
+                <div class="flex items-center space-x-2 flex-1 justify-center">
+                    <div id="step-3-indicator" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-secondary-200 text-text-secondary flex items-center justify-center font-body font-medium text-sm">3</div>
+                        <span class="hidden sm:inline font-body font-medium text-sm text-text-secondary">Date & Time</span>
+                    </div>
+                </div>
+                <div class="w-12 h-0.5 bg-secondary-200"></div>
+                <div class="flex items-center space-x-2 flex-1 justify-end">
+                    <div id="step-4-indicator" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-secondary-200 text-text-secondary flex items-center justify-center font-body font-medium text-sm">4</div>
+                        <span class="hidden sm:inline font-body font-medium text-sm text-text-secondary">Confirm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Container -->
+    <section class="section-container">
+        <div class="max-w-4xl mx-auto">
+            <!-- Step 1: Service Selection -->
+            <div id="step-1" class="booking-step" data-aos="fade-up">
+                <div class="card-elevated mb-8">
+                    <h2 class="heading-sm text-primary mb-6">Select Your Service</h2>
+                    
+                    <!-- Quick Service Categories -->
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <button class="service-category-btn active" data-category="all">All Services</button>
+                        <button class="service-category-btn" data-category="hair">Hair Services</button>
+                        <button class="service-category-btn" data-category="makeup">Makeup</button>
+                        <button class="service-category-btn" data-category="spa">Spa & Wellness</button>
+                    </div>
+
+                    <!-- Service Cards Grid -->
+                    <div class="grid md:grid-cols-2 gap-6" id="services-grid">
+                        <!-- Hair Cut & Style -->
+                        <div class="service-card" data-category="hair" data-service="haircut" data-price="85" data-duration="60">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-accent-50 rounded-sm flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-8 h-8 text-accent-400" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-body font-medium text-lg text-primary mb-1">Hair Cut & Style</h3>
+                                    <p class="body-sm text-text-secondary mb-3">Professional cut with personalized styling consultation</p>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-4">
+                                            <span class="body-sm text-text-secondary">
+                                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                                                </svg>
+                                                60 min
+                                            </span>
+                                            <span class="font-body font-medium text-accent-400">$85</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hair Color -->
+                        <div class="service-card" data-category="hair" data-service="haircolor" data-price="150" data-duration="120">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-accent-50 rounded-sm flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-8 h-8 text-accent-400" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-body font-medium text-lg text-primary mb-1">Hair Color Treatment</h3>
+                                    <p class="body-sm text-text-secondary mb-3">Full color service with premium organic products</p>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-4">
+                                            <span class="body-sm text-text-secondary">
+                                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                                                </svg>
+                                                120 min
+                                            </span>
+                                            <span class="font-body font-medium text-accent-400">$150</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bridal Makeup -->
+                        <div class="service-card" data-category="makeup" data-service="bridal" data-price="200" data-duration="90">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-accent-50 rounded-sm flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-8 h-8 text-accent-400" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-body font-medium text-lg text-primary mb-1">Bridal Makeup</h3>
+                                    <p class="body-sm text-text-secondary mb-3">Complete bridal look with trial session included</p>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-4">
+                                            <span class="body-sm text-text-secondary">
+                                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                                                </svg>
+                                                90 min
+                                            </span>
+                                            <span class="font-body font-medium text-accent-400">$200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Special Event Makeup -->
+                        <div class="service-card" data-category="makeup" data-service="event-makeup" data-price="120" data-duration="60">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-accent-50 rounded-sm flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-8 h-8 text-accent-400" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-body font-medium text-lg text-primary mb-1">Special Event Makeup</h3>
+                                    <p class="body-sm text-text-secondary mb-3">Professional makeup for parties and events</p>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-4">
+                                            <span class="body-sm text-text-secondary">
+                                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                                                </svg>
+                                                60 min
+                                            </span>
+                                            <span class="font-body font-medium text-accent-400">$120</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Facial Treatment -->
+                        <div class="service-card" data-category="spa" data-service="facial" data-price="95" data-duration="75">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-accent-50 rounded-sm flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-8 h-8 text-accent-400" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-body font-medium text-lg text-primary mb-1">Signature Facial</h3>
+                                    <p class="body-sm text-text-secondary mb-3">Rejuvenating facial with organic products</p>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-4">
+                                            <span class="body-sm text-text-secondary">
+                                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                                                </svg>
+                                                75 min
+                                            </span>
+                                            <span class="font-body font-medium text-accent-400">$95</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Massage Therapy -->
+                        <div class="service-card" data-category="spa" data-service="massage" data-price="110" data-duration="60">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-accent-50 rounded-sm flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-8 h-8 text-accent-400" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9c.83 0 1.5-.67 1.5-1.5S7.83 8 7 8s-1.5.67-1.5 1.5S6.17 11 7 11zm10 0c.83 0 1.5-.67 1.5-1.5S17.83 8 17 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-5 5.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-body font-medium text-lg text-primary mb-1">Relaxation Massage</h3>
+                                    <p class="body-sm text-text-secondary mb-3">Therapeutic massage for stress relief</p>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-4">
+                                            <span class="body-sm text-text-secondary">
+                                                <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                                                </svg>
+                                                60 min
+                                            </span>
+                                            <span class="font-body font-medium text-accent-400">$110</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Special Requests -->
+                    <div class="mt-8 pt-8 border-t border-secondary-100">
+                        <label class="label-base">Special Requests or Preferences (Optional)</label>
+                        <textarea id="special-requests" rows="3" class="input-base" placeholder="Let us know if you have any specific requirements or preferences..."></textarea>
+                    </div>
+                </div>
+
+                <div class="flex justify-end">
+                    <button id="continue-to-stylist" class="btn-primary" disabled>
+                        Continue to Stylist Selection
+                        <svg class="w-5 h-5 inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 2: Stylist Selection -->
+            <div id="step-2" class="booking-step hidden" data-aos="fade-up">
+                <div class="card-elevated mb-8">
+                    <h2 class="heading-sm text-primary mb-6">Choose Your Stylist</h2>
+                    
+                    <!-- Stylist Preference Options -->
+                    <div class="grid md:grid-cols-2 gap-6" id="stylists-grid">
+                        <!-- No Preference Option -->
+                        <div class="stylist-card" data-stylist="any">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-20 h-20 bg-accent-50 rounded-sm flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-10 h-10 text-accent-400" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-body font-medium text-lg text-primary mb-1">No Preference</h3>
+                                    <p class="body-sm text-text-secondary mb-2">First available stylist</p>
+                                    <div class="flex items-center space-x-2 text-success-600">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                        </svg>
+                                        <span class="body-sm font-medium">More availability</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stylist 1 -->
+                        <div class="stylist-card" data-stylist="sophia">
+                            <div class="flex items-start space-x-4">
+                                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1f59c1098-1763297869315.png" 
+                                     alt="Portrait of Sophia Martinez, senior hair stylist with 12 years experience specializing in color treatments" 
+                                     class="w-20 h-20 rounded-sm object-cover flex-shrink-0"
+                                     onerror="this.src='https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200'; this.onerror=null;">
+                                <div class="flex-1">
+                                    <h3 class="font-body font-medium text-lg text-primary mb-1">Sophia Martinez</h3>
+                                    <p class="body-sm text-text-secondary mb-2">Senior Stylist • 12 years exp.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-accent-50 text-accent-600 text-xs rounded-sm">Color Specialist</span>
+                                        <span class="px-2 py-1 bg-accent-50 text-accent-600 text-xs rounded-sm">Balayage Expert</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stylist 2 -->
+                        <div class="stylist-card" data-stylist="emma">
+                            <div class="flex items-start space-x-4">
+                                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1cac54b7e-1766756495842.png" 
+                                     alt="Portrait of Emma Thompson, master stylist with 15 years experience specializing in bridal and event styling" 
+                                     class="w-20 h-20 rounded-sm object-cover flex-shrink-0"
+                                     onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;">
+                                <div class="flex-1">
+                                    <h3 class="font-body font-medium text-lg text-primary mb-1">Emma Thompson</h3>
+                                    <p class="body-sm text-text-secondary mb-2">Master Stylist • 15 years exp.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-accent-50 text-accent-600 text-xs rounded-sm">Bridal Specialist</span>
+                                        <span class="px-2 py-1 bg-accent-50 text-accent-600 text-xs rounded-sm">Updos</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stylist 3 -->
+                        <div class="stylist-card" data-stylist="olivia">
+                            <div class="flex items-start space-x-4">
+                                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_117cd73ce-1763294659679.png" 
+                                     alt="Portrait of Olivia Chen, makeup artist with 8 years experience specializing in natural and glamour looks" 
+                                     class="w-20 h-20 rounded-sm object-cover flex-shrink-0"
+                                     onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=200'; this.onerror=null;">
+                                <div class="flex-1">
+                                    <h3 class="font-body font-medium text-lg text-primary mb-1">Olivia Chen</h3>
+                                    <p class="body-sm text-text-secondary mb-2">Makeup Artist • 8 years exp.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-accent-50 text-accent-600 text-xs rounded-sm">Bridal Makeup</span>
+                                        <span class="px-2 py-1 bg-accent-50 text-accent-600 text-xs rounded-sm">Airbrush</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stylist 4 -->
+                        <div class="stylist-card" data-stylist="isabella">
+                            <div class="flex items-start space-x-4">
+                                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1b08c3e8f-1763298288006.png" 
+                                     alt="Portrait of Isabella Rodriguez, spa therapist with 10 years experience specializing in facial treatments" 
+                                     class="w-20 h-20 rounded-sm object-cover flex-shrink-0"
+                                     onerror="this.src='https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200'; this.onerror=null;">
+                                <div class="flex-1">
+                                    <h3 class="font-body font-medium text-lg text-primary mb-1">Isabella Rodriguez</h3>
+                                    <p class="body-sm text-text-secondary mb-2">Spa Therapist • 10 years exp.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-accent-50 text-accent-600 text-xs rounded-sm">Facial Expert</span>
+                                        <span class="px-2 py-1 bg-accent-50 text-accent-600 text-xs rounded-sm">Massage</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between">
+                    <button id="back-to-service" class="btn-ghost">
+                        <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                        Back to Services
+                    </button>
+                    <button id="continue-to-datetime" class="btn-primary" disabled>
+                        Continue to Date & Time
+                        <svg class="w-5 h-5 inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 3: Date & Time Selection -->
+            <div id="step-3" class="booking-step hidden" data-aos="fade-up">
+                <div class="card-elevated mb-8">
+                    <h2 class="heading-sm text-primary mb-6">Select Date & Time</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Calendar -->
+                        <div>
+                            <label class="label-base">Choose Date</label>
+                            <div class="bg-surface rounded-sm p-4">
+                                <!-- Calendar Header -->
+                                <div class="flex items-center justify-between mb-4">
+                                    <button id="prev-month" class="p-2 hover:bg-secondary-100 rounded-sm transition-base">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                        </svg>
+                                    </button>
+                                    <span id="current-month" class="font-body font-medium text-primary">December 2025</span>
+                                    <button id="next-month" class="p-2 hover:bg-secondary-100 rounded-sm transition-base">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <!-- Calendar Grid -->
+                                <div class="grid grid-cols-7 gap-2">
+                                    <div class="text-center body-sm text-text-secondary font-medium">Sun</div>
+                                    <div class="text-center body-sm text-text-secondary font-medium">Mon</div>
+                                    <div class="text-center body-sm text-text-secondary font-medium">Tue</div>
+                                    <div class="text-center body-sm text-text-secondary font-medium">Wed</div>
+                                    <div class="text-center body-sm text-text-secondary font-medium">Thu</div>
+                                    <div class="text-center body-sm text-text-secondary font-medium">Fri</div>
+                                    <div class="text-center body-sm text-text-secondary font-medium">Sat</div>
+                                    
+                                    <!-- Calendar Days -->
+                                    <div id="calendar-days" class="col-span-7 grid grid-cols-7 gap-2">
+                                        <!-- Days will be generated by JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Time Slots -->
+                        <div>
+                            <label class="label-base">Available Time Slots</label>
+                            <div id="time-slots-container" class="space-y-2 max-h-96 overflow-y-auto">
+                                <div class="text-center py-8 text-text-secondary body-base">
+                                    Please select a date to view available times
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Same Day Availability Notice -->
+                    <div class="mt-6 p-4 bg-warning-50 border border-warning-100 rounded-sm">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-warning-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                            </svg>
+                            <div>
+                                <p class="body-sm text-warning-600 font-medium mb-1">Need same-day appointment?</p>
+                                <p class="body-sm text-text-secondary">Call us at <a href="tel:+1234567890" class="text-accent-400 hover:text-accent-500 font-medium">(123) 456-7890</a> or <a href="https://wa.me/1234567890" class="text-accent-400 hover:text-accent-500 font-medium">WhatsApp</a> for immediate assistance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between">
+                    <button id="back-to-stylist" class="btn-ghost">
+                        <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                        Back to Stylist
+                    </button>
+                    <button id="continue-to-confirm" class="btn-primary" disabled>
+                        Continue to Confirmation
+                        <svg class="w-5 h-5 inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 4: Confirmation & Contact Details -->
+            <div id="step-4" class="booking-step hidden" data-aos="fade-up">
+                <div class="card-elevated mb-8">
+                    <h2 class="heading-sm text-primary mb-6">Confirm Your Appointment</h2>
+                    
+                    <!-- Booking Summary -->
+                    <div class="bg-surface rounded-sm p-6 mb-8">
+                        <h3 class="font-body font-medium text-lg text-primary mb-4">Appointment Summary</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-start">
+                                <span class="body-base text-text-secondary">Service:</span>
+                                <span id="summary-service" class="body-base text-primary font-medium text-right">Hair Cut & Style</span>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <span class="body-base text-text-secondary">Stylist:</span>
+                                <span id="summary-stylist" class="body-base text-primary font-medium">Sophia Martinez</span>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <span class="body-base text-text-secondary">Date & Time:</span>
+                                <span id="summary-datetime" class="body-base text-primary font-medium text-right">Dec 28, 2025 at 10:00 AM</span>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <span class="body-base text-text-secondary">Duration:</span>
+                                <span id="summary-duration" class="body-base text-primary font-medium">60 minutes</span>
+                            </div>
+                            <div class="pt-3 border-t border-secondary-100 flex justify-between items-start">
+                                <span class="body-lg text-primary font-medium">Total Price:</span>
+                                <span id="summary-price" class="body-lg text-accent-400 font-medium">$85</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information Form -->
+                    <div class="space-y-6">
+                        <h3 class="font-body font-medium text-lg text-primary">Your Contact Information</h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first-name" class="label-base">First Name *</label>
+                                <input type="text" id="first-name" class="input-base" placeholder="Enter your first name" required>
+                            </div>
+                            <div>
+                                <label for="last-name" class="label-base">Last Name *</label>
+                                <input type="text" id="last-name" class="input-base" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="label-base">Email Address *</label>
+                                <input type="email" id="email" class="input-base" placeholder="your.email@example.com" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="label-base">Phone Number *</label>
+                                <input type="tel" id="phone" class="input-base" placeholder="(123) 456-7890" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="additional-notes" class="label-base">Additional Notes (Optional)</label>
+                            <textarea id="additional-notes" rows="3" class="input-base" placeholder="Any additional information we should know..."></textarea>
+                        </div>
+
+                        <!-- Terms & Conditions -->
+                        <div class="flex items-start space-x-3">
+                            <input type="checkbox" id="terms-checkbox" class="mt-1 w-5 h-5 text-accent-400 border-secondary-100 rounded focus:ring-accent-400">
+                            <label for="terms-checkbox" class="body-sm text-text-secondary">
+                                I agree to the <a href="javascript:void(0)" class="text-accent-400 hover:text-accent-500 font-medium">cancellation policy</a> and understand that I must provide at least 24 hours notice for cancellations or rescheduling.
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cancellation Policy Info -->
+                    <div class="mt-6 p-4 bg-accent-50 border border-accent-100 rounded-sm">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                            </svg>
+                            <div>
+                                <p class="body-sm text-primary font-medium mb-1">Cancellation Policy</p>
+                                <p class="body-sm text-text-secondary">Please provide at least 24 hours notice for cancellations or rescheduling. Late cancellations may be subject to a fee. You can modify your appointment by calling us or using the link in your confirmation email.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between">
+                    <button id="back-to-datetime" class="btn-ghost">
+                        <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                        Back to Date & Time
+                    </button>
+                    <button id="confirm-booking" class="btn-primary" disabled>
+                        <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        Confirm Appointment
+                    </button>
+                </div>
+            </div>
+
+            <!-- Success Confirmation (Hidden by default) -->
+            <div id="success-confirmation" class="hidden" data-aos="fade-up">
+                <div class="card-elevated text-center">
+                    <div class="w-20 h-20 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-success-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    
+                    <h2 class="heading-md text-primary mb-4">Appointment Confirmed!</h2>
+                    <p class="body-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+                        Your appointment has been successfully booked. We've sent a confirmation email with all the details to <span id="confirmation-email" class="text-accent-400 font-medium">your email</span>.
+                    </p>
+
+                    <!-- Confirmation Details -->
+                    <div class="bg-surface rounded-sm p-6 mb-8 text-left max-w-2xl mx-auto">
+                        <h3 class="font-body font-medium text-lg text-primary mb-4">Appointment Details</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-start">
+                                <span class="body-base text-text-secondary">Confirmation #:</span>
+                                <span id="confirmation-number" class="body-base text-primary font-medium">LXS-2025-001234</span>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <span class="body-base text-text-secondary">Service:</span>
+                                <span id="confirmation-service" class="body-base text-primary font-medium text-right">Hair Cut & Style</span>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <span class="body-base text-text-secondary">Stylist:</span>
+                                <span id="confirmation-stylist" class="body-base text-primary font-medium">Sophia Martinez</span>
+                            </div>
+                            <div class="flex justify-between items-start">
+                                <span class="body-base text-text-secondary">Date & Time:</span>
+                                <span id="confirmation-datetime" class="body-base text-primary font-medium text-right">Dec 28, 2025 at 10:00 AM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next Steps -->
+                    <div class="bg-accent-50 rounded-sm p-6 mb-8 text-left max-w-2xl mx-auto">
+                        <h3 class="font-body font-medium text-lg text-primary mb-4">What's Next?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <span class="body-base text-text-secondary">Check your email for confirmation and appointment details</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <span class="body-base text-text-secondary">Add the appointment to your calendar using the link in the email</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <span class="body-base text-text-secondary">You'll receive a reminder 24 hours before your appointment</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-accent-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <span class="body-base text-text-secondary">Need to reschedule? Use the link in your email or call us</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="homepage.html" class="btn-secondary">Return to Home</a>
+                        <a href="services.html" class="btn-outline">Browse More Services</a>
+                    </div>
+
+                    <!-- Contact Support -->
+                    <div class="mt-8 pt-8 border-t border-secondary-100">
+                        <p class="body-base text-text-secondary mb-4">Questions about your appointment?</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="tel:+1234567890" class="flex items-center justify-center space-x-2 text-accent-400 hover:text-accent-500 transition-base">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                                <span class="font-body font-medium">(123) 456-7890</span>
+                            </a>
+                            <a href="https://wa.me/1234567890" class="flex items-center justify-center space-x-2 text-accent-400 hover:text-accent-500 transition-base">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                                </svg>
+                                <span class="font-body font-medium">WhatsApp Us</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-surface py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent-400" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 10H28L22 16L24 24L16 20L8 24L10 16L4 10H12L16 2Z"/>
+                        </svg>
+                        <span class="font-display font-bold text-xl text-primary">Luxe Salon Studio</span>
+                    </div>
+                    <p class="body-base text-text-secondary mb-6 max-w-md">
+                        Where beauty meets sophistication. Experience transformative beauty services in our luxurious salon studio with professional expertise and personalized care.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent-400 transition-base">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent-400 transition-base">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent-400 transition-base">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent-400 transition-base">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-display font-medium text-lg text-primary mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-text-secondary hover:text-accent-400 transition-base">Services</a></li>
+                        <li><a href="gallery.html" class="text-text-secondary hover:text-accent-400 transition-base">Gallery</a></li>
+                        <li><a href="about_us.html" class="text-text-secondary hover:text-accent-400 transition-base">About Us</a></li>
+                        <li><a href="book_appointment.html" class="text-text-secondary hover:text-accent-400 transition-base">Book Appointment</a></li>
+                        <li><a href="contact.html" class="text-text-secondary hover:text-accent-400 transition-base">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-display font-medium text-lg text-primary mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="text-text-secondary">
+                            <span class="block">123 Beauty Boulevard</span>
+                            <span class="block">Luxury District, NY 10001</span>
+                        </li>
+                        <li>
+                            <a href="tel:+1234567890" class="text-text-secondary hover:text-accent-400 transition-base">
+                                (123) 456-7890
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:hello@luxesalonstudio.com" class="text-text-secondary hover:text-accent-400 transition-base">
+                                hello@luxesalonstudio.com
+                            </a>
+                        </li>
+                        <li class="text-text-secondary">
+                            <span class="block">Mon-Sat: 9AM-7PM</span>
+                            <span class="block">Sunday: 10AM-6PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-100 mt-12 pt-8 text-center">
+                <p class="text-text-secondary">
+                    © 2025 Luxe Salon Studio. All Rights Reserved. | Licensed Beauty Professionals | Certified Organic Products
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Booking State Management
+        let bookingData = {
+            service: null,
+            serviceName: '',
+            price: 0,
+            duration: 0,
+            stylist: null,
+            stylistName: '',
+            date: null,
+            time: null,
+            specialRequests: '',
+            firstName: '',
+            lastName: '',
+            email: '',
+            phone: '',
+            additionalNotes: ''
+        };
+
+        // Step 1: Service Selection
+        const serviceCards = document.querySelectorAll('.service-card');
+        const continueToStylistBtn = document.getElementById('continue-to-stylist');
+        const serviceCategoryBtns = document.querySelectorAll('.service-category-btn');
+
+        // Service category filtering
+        serviceCategoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                serviceCategoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const category = btn.dataset.category;
+                serviceCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        serviceCards.forEach(card => {
+            card.addEventListener('click', () => {
+                serviceCards.forEach(c => c.classList.remove('selected'));
+                card.classList.add('selected');
+                
+                bookingData.service = card.dataset.service;
+                bookingData.serviceName = card.querySelector('h3').textContent;
+                bookingData.price = parseInt(card.dataset.price);
+                bookingData.duration = parseInt(card.dataset.duration);
+                
+                continueToStylistBtn.disabled = false;
+            });
+        });
+
+        continueToStylistBtn.addEventListener('click', () => {
+            bookingData.specialRequests = document.getElementById('special-requests').value;
+            showStep(2);
+        });
+
+        // Step 2: Stylist Selection
+        const stylistCards = document.querySelectorAll('.stylist-card');
+        const continueToDatetimeBtn = document.getElementById('continue-to-datetime');
+        const backToServiceBtn = document.getElementById('back-to-service');
+
+        stylistCards.forEach(card => {
+            card.addEventListener('click', () => {
+                stylistCards.forEach(c => c.classList.remove('selected'));
+                card.classList.add('selected');
+                
+                bookingData.stylist = card.dataset.stylist;
+                bookingData.stylistName = card.querySelector('h3')?.textContent || 'First Available Stylist';
+                
+                continueToDatetimeBtn.disabled = false;
+            });
+        });
+
+        continueToDatetimeBtn.addEventListener('click', () => {
+            showStep(3);
+            generateCalendar();
+        });
+
+        backToServiceBtn.addEventListener('click', () => {
+            showStep(1);
+        });
+
+        // Step 3: Date & Time Selection
+        const continueToConfirmBtn = document.getElementById('continue-to-confirm');
+        const backToStylistBtn = document.getElementById('back-to-stylist');
+        let currentDate = new Date();
+
+        function generateCalendar() {
+            const calendarDays = document.getElementById('calendar-days');
+            const currentMonthSpan = document.getElementById('current-month');
+            
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth();
+            
+            const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                              'July', 'August', 'September', 'October', 'November', 'December'];
+            currentMonthSpan.textContent = `${monthNames[month]} ${year}`;
+            
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            const today = new Date();
+            
+            calendarDays.innerHTML = '';
+            
+            // Empty cells for days before month starts
+            for (let i = 0; i < firstDay; i++) {
+                const emptyDay = document.createElement('div');
+                calendarDays.appendChild(emptyDay);
+            }
+            
+            // Days of the month
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dayDate = new Date(year, month, day);
+                const isPast = dayDate < today.setHours(0, 0, 0, 0);
+                
+                const dayBtn = document.createElement('button');
+                dayBtn.textContent = day;
+                dayBtn.className = `w-full aspect-square flex items-center justify-center rounded-sm text-sm transition-base ${
+                    isPast 
+                        ? 'text-text-tertiary cursor-not-allowed' 
+                        : 'text-primary hover:bg-accent-50 hover:text-accent-600'
+                }`;
+                
+                if (!isPast) {
+                    dayBtn.addEventListener('click', () => {
+                        document.querySelectorAll('#calendar-days button').forEach(b => {
+                            b.classList.remove('bg-accent-400', 'text-white');
+                        });
+                        dayBtn.classList.add('bg-accent-400', 'text-white');
+                        
+                        bookingData.date = dayDate;
+                        generateTimeSlots(dayDate);
+                    });
+                } else {
+                    dayBtn.disabled = true;
+                }
+                
+                calendarDays.appendChild(dayBtn);
+            }
+        }
+
+        function generateTimeSlots(date) {
+            const timeSlotsContainer = document.getElementById('time-slots-container');
+            timeSlotsContainer.innerHTML = '';
+            
+            const timeSlots = [
+                '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM',
+                '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM', '6:00 PM'
+            ];
+            
+            timeSlots.forEach(time => {
+                const slotBtn = document.createElement('button');
+                slotBtn.className = 'time-slot-btn w-full px-4 py-3 border border-secondary-100 rounded-sm text-left hover:border-accent-400 hover:bg-accent-50 transition-base';
+                slotBtn.innerHTML = `
+                    <div class="flex items-center justify-between">
+                        <span class="font-body font-medium text-primary">${time}</span>
+                        <span class="text-xs text-success-600 flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            Available
+                        </span>
+                    </div>
+                `;
+                
+                slotBtn.addEventListener('click', () => {
+                    document.querySelectorAll('.time-slot-btn').forEach(b => {
+                        b.classList.remove('border-accent-400', 'bg-accent-50');
+                    });
+                    slotBtn.classList.add('border-accent-400', 'bg-accent-50');
+                    
+                    bookingData.time = time;
+                    continueToConfirmBtn.disabled = false;
+                });
+                
+                timeSlotsContainer.appendChild(slotBtn);
+            });
+        }
+
+        document.getElementById('prev-month').addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            generateCalendar();
+        });
+
+        document.getElementById('next-month').addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            generateCalendar();
+        });
+
+        continueToConfirmBtn.addEventListener('click', () => {
+            updateSummary();
+            showStep(4);
+        });
+
+        backToStylistBtn.addEventListener('click', () => {
+            showStep(2);
+        });
+
+        // Step 4: Confirmation
+        const backToDatetimeBtn = document.getElementById('back-to-datetime');
+        const confirmBookingBtn = document.getElementById('confirm-booking');
+        const termsCheckbox = document.getElementById('terms-checkbox');
+
+        function updateSummary() {
+            const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                              'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            const dateStr = `${monthNames[bookingData.date.getMonth()]} ${bookingData.date.getDate()}, ${bookingData.date.getFullYear()}`;
+            
+            document.getElementById('summary-service').textContent = bookingData.serviceName;
+            document.getElementById('summary-stylist').textContent = bookingData.stylistName;
+            document.getElementById('summary-datetime').textContent = `${dateStr} at ${bookingData.time}`;
+            document.getElementById('summary-duration').textContent = `${bookingData.duration} minutes`;
+            document.getElementById('summary-price').textContent = `$${bookingData.price}`;
+        }
+
+        // Form validation
+        const firstNameInput = document.getElementById('first-name');
+        const lastNameInput = document.getElementById('last-name');
+        const emailInput = document.getElementById('email');
+        const phoneInput = document.getElementById('phone');
+
+        function validateForm() {
+            const isValid = firstNameInput.value.trim() !== '' &&
+                          lastNameInput.value.trim() !== '' &&
+                          emailInput.value.trim() !== '' &&
+                          phoneInput.value.trim() !== '' &&
+                          termsCheckbox.checked;
+            
+            confirmBookingBtn.disabled = !isValid;
+        }
+
+        [firstNameInput, lastNameInput, emailInput, phoneInput].forEach(input => {
+            input.addEventListener('input', validateForm);
+        });
+
+        termsCheckbox.addEventListener('change', validateForm);
+
+        backToDatetimeBtn.addEventListener('click', () => {
+            showStep(3);
+        });
+
+        confirmBookingBtn.addEventListener('click', () => {
+            bookingData.firstName = firstNameInput.value;
+            bookingData.lastName = lastNameInput.value;
+            bookingData.email = emailInput.value;
+            bookingData.phone = phoneInput.value;
+            bookingData.additionalNotes = document.getElementById('additional-notes').value;
+            
+            showSuccessConfirmation();
+        });
+
+        // Success Confirmation
+        function showSuccessConfirmation() {
+            document.querySelectorAll('.booking-step').forEach(step => step.classList.add('hidden'));
+            document.getElementById('success-confirmation').classList.remove('hidden');
+            
+            const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                              'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            const dateStr = `${monthNames[bookingData.date.getMonth()]} ${bookingData.date.getDate()}, ${bookingData.date.getFullYear()}`;
+            
+            document.getElementById('confirmation-email').textContent = bookingData.email;
+            document.getElementById('confirmation-number').textContent = `LXS-${new Date().getFullYear()}-${Math.floor(Math.random() * 900000 + 100000)}`;
+            document.getElementById('confirmation-service').textContent = bookingData.serviceName;
+            document.getElementById('confirmation-stylist').textContent = bookingData.stylistName;
+            document.getElementById('confirmation-datetime').textContent = `${dateStr} at ${bookingData.time}`;
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Step Navigation
+        function showStep(stepNumber) {
+            document.querySelectorAll('.booking-step').forEach(step => step.classList.add('hidden'));
+            document.getElementById(`step-${stepNumber}`).classList.remove('hidden');
+            
+            // Update progress indicators
+            for (let i = 1; i <= 4; i++) {
+                const indicator = document.getElementById(`step-${i}-indicator`);
+                const circle = indicator.querySelector('div');
+                const text = indicator.querySelector('span');
+                
+                if (i < stepNumber) {
+                    circle.classList.remove('bg-secondary-200', 'text-text-secondary', 'bg-accent-400', 'text-white');
+                    circle.classList.add('bg-success-600', 'text-white');
+                    if (text) text.classList.remove('text-text-secondary');
+                    if (text) text.classList.add('text-primary');
+                } else if (i === stepNumber) {
+                    circle.classList.remove('bg-secondary-200', 'text-text-secondary', 'bg-success-600');
+                    circle.classList.add('bg-accent-400', 'text-white');
+                    if (text) text.classList.remove('text-text-secondary');
+                    if (text) text.classList.add('text-primary');
+                } else {
+                    circle.classList.remove('bg-accent-400', 'text-white', 'bg-success-600');
+                    circle.classList.add('bg-secondary-200', 'text-text-secondary');
+                    if (text) text.classList.remove('text-primary');
+                    if (text) text.classList.add('text-text-secondary');
+                }
+            }
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // CSS for interactive elements
+        const style = document.createElement('style');
+        style.textContent = `
+            .service-card, .stylist-card {
+                cursor: pointer;
+                transition: all 0.3s ease;
+                border: 2px solid transparent;
+            }
+            
+            .service-card:hover, .stylist-card:hover {
+                border-color: var(--color-accent-400);
+                transform: translateY(-2px);
+            }
+            
+            .service-card.selected, .stylist-card.selected {
+                border-color: var(--color-accent-400);
+                background-color: var(--color-accent-50);
+            }
+            
+            .service-category-btn {
+                padding: 0.5rem 1rem;
+                border: 1px solid var(--color-secondary-100);
+                border-radius: 0.125rem;
+                background: var(--color-background);
+                color: var(--color-text-secondary);
+                font-family: 'Poppins', sans-serif;
+                font-size: 0.875rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            
+            .service-category-btn:hover {
+                border-color: var(--color-accent-400);
+                color: var(--color-accent-400);
+            }
+            
+            .service-category-btn.active {
+                background: var(--color-accent-400);
+                color: white;
+                border-color: var(--color-accent-400);
+            }
+            
+            .time-slot-btn.selected {
+                border-color: var(--color-accent-400);
+                background-color: var(--color-accent-50);
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
