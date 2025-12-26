@@ -25,21 +25,37 @@ A modern HTML project utilizing Tailwind CSS for building responsive web applica
 ## 📁 Project Structure
 
 ├── index.html
+
 ├── pages/
+
 │ ├── homepage.html
+
 │ ├── about_us.html
+
 │ ├── services.html
+
 │ ├── gallery.html
+
 │ ├── book_appointment.html
+
 │ └── contact.html
+
 ├── css/
+
 │ ├── tailwind.css
+
 │ └── main.css
+
 ├── public/
+
 │ ├── favicon.ico
+
 │ └── manifest.json
+
 ├── tailwind.config.js
+
 ├── package.json
+
 └── README.md
 
 ---
