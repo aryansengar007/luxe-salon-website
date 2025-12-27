@@ -22,7 +22,7 @@ A modern HTML project utilizing Tailwind CSS for building responsive web applica
 
 ---
 
-## 📁 Project Structure
+## 📁 Detailed Project Structure
 
 ├── index.html
 
